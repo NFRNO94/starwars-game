@@ -1,0 +1,25 @@
+body {
+    background-image: url("../images/vader-background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.character-img {
+    height: 160px;
+    width: 100%;
+}
+
+.character-box .content {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        color: #f1f1f1;
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+}
+
+ol {
+    text-align: left;
+}
