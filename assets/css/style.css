@@ -6,12 +6,13 @@ html {
 
 body {
     background-image: url("../images/starwars-game-back.jpg");
+    background-color: black;
     background-size: cover;
     background-attachment: fixed;
 }
 
 #pageTitle {
-    text-shadow: 6px 3px black;
+    text-shadow: 6px 2px black;
     font-size: 48px;
     font-weight: bolder;
 }
@@ -22,7 +23,7 @@ body {
 }
 
 .instList {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .character-img {
@@ -31,6 +32,11 @@ body {
     border: 3px solid red;
     border-radius: 5px;
     margin: 5px;
+}
+
+.character-img:hover {
+    border: 3px solid white;
+    cursor: pointer;
 }
 
 .character-box .content {
@@ -63,6 +69,14 @@ ol {
 
     #pageTitle {
         font-size: 32px;
+    }
+
+    .subTitle {
+        font-size: 20px;
+    }
+
+    .instList {
+        font-size: 16px;
     }
 
     .character-img {
