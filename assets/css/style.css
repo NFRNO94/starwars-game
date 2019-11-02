@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     width: 100%;
     height: 100%;
 }
@@ -7,6 +8,17 @@ body {
     background-image: url("../images/starwars-game-back.jpg");
     background-size: cover;
     background-attachment: fixed;
+}
+
+#pageTitle {
+    text-shadow: 6px 3px black;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.subTitle {
+    text-shadow: 6px 3px black;
+    font-weight: bold;
 }
 
 .character-img {
@@ -18,16 +30,39 @@ body {
 }
 
 .character-box .content {
-        position: absolute;
-        bottom: 0;
-        background: rgb(0, 0, 0); /* Fallback color */
-        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-        color: #f1f1f1;
-        width: 100%;
-        padding: 5px;
-        text-align: center;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
 }
 
 ol {
     text-align: left;
+}
+
+/* @media (max-width: 1200px) {
+} */
+
+/* @media (max-width: 992px) {
+} */
+
+/* @media (max-width: 768px) {
+} */
+
+@media (max-width: 576px) {
+
+    #pageTitle {
+        font-size: 32px;
+    }
+
+    .character-img {
+        height: 80px;
+        width: 100px;
+    }
 }
