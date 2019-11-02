@@ -1,12 +1,20 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
-    background-image: url("../images/vader-background.jpg");
-    background-position: center;
+    background-image: url("../images/starwars-game-back.jpg");
+    background-size: cover;
     background-attachment: fixed;
 }
 
 .character-img {
-    height: 160px;
-    width: 100%;
+    height: 100px;
+    width: 160px;
+    border: 3px solid red;
+    border-radius: 5px;
+    margin: 5px;
 }
 
 .character-box .content {
