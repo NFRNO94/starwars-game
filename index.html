@@ -2,7 +2,7 @@
 <html lANG="en-US">
 
 <head>
-    <title>Star Wars Game</title>
+    <title>Star Wars RPG Game</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -35,12 +35,8 @@
                 </ul>
             </div>
             <div class="col-lg-6 col-12">
-                <h4 class="subTitle text-center">Select Your Character</h4>
+                <h4 class="subTitle text-center">Available Characters</h4>
                 <div class="d-flex flex-row justify-content-around align-items-center flex-wrap">
-                    <img src="assets/images/darth-maul-2.jpg" class="character-img img-fluid">
-                    <img src="assets/images/darth-vader-2.jpg" class="character-img img-fluid">
-                    <img src="assets/images/obi-wan.png" class="character-img img-fluid">
-                    <img src="assets/images/quigon.jpg" class="character-img img-fluid">
                     <img src="assets/images/darth-maul-2.jpg" class="character-img img-fluid">
                     <img src="assets/images/darth-vader-2.jpg" class="character-img img-fluid">
                     <img src="assets/images/obi-wan.png" class="character-img img-fluid">
@@ -58,6 +54,7 @@
                 <div class="d-flex flex-row justify-content-around align-items-start flex-wrap">
                     <div>
                         <h4 class="subTitle text-center">Your Character</h4>
+                        <div id="selected-character"></div>
                     </div>
                     <div class="text-center">
                         <button type="button" class="btn btn-danger btn-sm mb-1">Attack</button>
@@ -66,6 +63,7 @@
                     </div>
                     <div>
                         <h4 class="subTitle text-center">AI Character</h4>
+                        <div id="selected-opp"></div>
                     </div>
                 </div>
             </div>

@@ -1,34 +1,57 @@
 // constructor variable for game logic
-    //  select character function for user
-        //  hide character in selector area
-        //  show character under Your character span
+//  select character function for user
+//  select character function for ai
+//  assign characters a health value
+//  assign characters an attack value
 
-    //  select character function for ai
-        //  hide character in selector area
-        //  show character under AI character span
+//  start game on attack click
+//``defeat character function
+// choose a new character to defeat
+// reset game on click of reset
 
-    //  start game on attack click
-        //  assign characters a health value
-        //  assign characters an attack value
-        //  on attack click, reduce health per character accordingly
-        //  reflect on health display for character
 
-    //``defeat character function
-        //  when health of opponent reaches 0 or lower, remove player
-        //  display message to user showing ai character has lost, 
-            // choose a new character to defeat
-        //  allow user to select a new character to win
+// constructor for game
+function Character(name, title, hitPts, attackPts) {
+    this.name = name;
+    this.title = title;
+    this.hitPts = hitPts;
+    this.attackPts = attackPts;
+    this.printStats = function () {
+        console.log("Name: " + this.name + "\nTitle: " + this.title
+            + "\nHit Points: " + this.hitPts + "\nAttack Points: "
+            + this.attackPts);
+    };
+    this.isAlive = function () {
+        if (this.hitPts > 0) {
+            console.log(this.name + " is still alive!"
+                + "\n---------------------------------\n");
+            return true;
+        }
+        console.log(this.name + " has died!");
+        return false;
+    };
+    this.attack = function (character2) {
+        character2.hitPts -= this.attackPts
+    };
+    this.defeatOpp = function () {
+    }
+};
 
-    //  game win function
-        // display message showing user has won above reset button
-        // hide attack button
 
-    //  game loss function
-        // display message showing game is over
-        // hide attack button
+let darthMaul = new Character("Darth Maul", "Sith Lord", 300, 50);
+let obiWan = new Character("Obi Wan Kenobi", "Jedi", 350, 40);
+let quiGonJinn = new Character("Qui-Gon Jinn", "Jedi", 250, 35);
+let darthVader = new Character("Darth Vader", "Sith Lord", 400, 45);
 
-    // reset game on click of reset
-        // scores wiped and characters returned on page reload
-        // will add in select new character, and a restart function
+darthMaul.printStats();
+obiWan.printStats();
+quiGonJinn.printStats();
+darthVader.printStats();
 
-console.log("Hello World");
+// while (obiWan.isAlive() === true && darthMaul.isAlive() === true) {
+//     obiWan.attack(darthMaul);
+//     darthMaul.attack(obiWan);
+
+//     obiWan.printStats();
+//     darthMaul.printStats();
+// }
