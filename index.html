@@ -25,27 +25,46 @@
 
         <div class="row">
             <div class="col-lg-6 col-12">
-                <h4 class="subTitle">Game Instructions</h4>
-                <ul class="ml-3 instList">
-                    <li>1. Choose your character.</li>
-                    <li>2. Choose your opponent.</li>
-                    <li>3. Click the Attack button until the last character stands.</li>
-                    <li>4. If you win, choose the next character to defeat.</li>
-                    <li>5. Fight until you are defeated, or until you have defeated all characters!</li>
-                </ul>
-            </div>
-            <div class="col-lg-6 col-12">
-                <h4 class="subTitle text-center">Available Characters</h4>
-                <div class="d-flex flex-row justify-content-around align-items-center flex-wrap card-deck" id="characters-section">
+                <div id="instructions">
+                    <h4 class="subTitle text-center">Game Instructions</h4>
+                    <ul class="ml-3 instList">
+                        <li>1. Choose your character.</li>
+                        <li>2. Choose your opponent.</li>
+                        <li>3. Click the Attack button until the last character stands.</li>
+                        <li>4. If you win, choose the next character to defeat.</li>
+                        <li>5. Fight until you are defeated, or until you have defeated all characters!</li>
+                    </ul>
                 </div>
+
+                <br><br>
+
+                <h4 class="subTitle text-center">Available Characters</h4>
+                <div class="d-flex flex-row justify-content-around align-items-center flex-wrap card-deck"
+                    id="characters-section">
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <h4 class="subTitle text-center" id="userCharacter">Your Character</h4>
+                <div id="selected-character"></div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <h4 class="subTitle text-center" id="aiCharacter">AI Character</h4>
+                <div id="selected-opp"></div>
             </div>
         </div>
 
-        <hr class="bg-light">
-
         <br><br>
 
-        <div class="row">
+        <!-- <div class="row">
+            <div class="col-lg-6 col-12">
+
+            </div>
+            <div class="col-lg-6 col-12">
+
+            </div>
+        </div> -->
+
+        <!--         
             <div class="col">
                 <div class="d-flex flex-row justify-content-around align-items-start flex-wrap">
                     <div>
@@ -55,7 +74,7 @@
                     <div class="text-center">
                         <button type="button" class="btn btn-danger btn-sm mb-1">Attack</button>
                         <br><br>
-                        <!-- button added to js file -->
+                       
                         <button type="button" class="btn btn-danger btn-sm mb-1">Reset</button>
                     </div>
                     <div>
@@ -64,7 +83,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <script src="assets/javascript/game.js"></script>
 

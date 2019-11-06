@@ -39,7 +39,7 @@ function Character(name, title, image, hitPts, attackPts) {
 
 let characters = {};
 
-characters.darthMaul = new Character("Darth Maul", "Sith Lord", "assets/images/darth-maul-2.jpg", 300, 50);
+characters.darthMaul = new Character("Darth Maul", "Sith Lord", "assets/images/darthMaul3.jpg", 300, 50);
 characters.obiWan = new Character("Obi Wan Kenobi", "Jedi", "assets/images/obi-wan.png", 350, 35);
 characters.quiGonJinn = new Character("Qui-Gon Jinn", "Jedi", "assets/images/quigon.jpg", 250, 45);
 characters.darthVader = new Character("Darth Vader", "Sith Lord", "assets/images/darth-vader-2.jpg", 400, 40);
@@ -84,9 +84,11 @@ $(document).ready(function () {
 
     initializeGame();
 
+    
+
     let resetGame = function (resultMessage) {
         // restart button variable
-        let restart = $("<button type='button' class='btn btn-danger btn-sm mb-1'>Reset</button>").click(function () {
+        let restart = $("<button type='button' class='btn btn-danger btn-sm mb-1' id='reset'>Reset</button>").click(function () {
             location.reload();
         });
 
