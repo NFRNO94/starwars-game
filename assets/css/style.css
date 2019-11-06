@@ -28,15 +28,22 @@ body {
 
 .character-img {
     height: 100px;
+    width: 175px;
+}
+
+.card:hover {
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.card {
     width: 160px;
+    height: auto;
+    background-color: black;
     border: 3px solid red;
     border-radius: 5px;
     margin: 5px;
-}
-
-.character-img:hover {
-    border: 3px solid white;
-    cursor: pointer;
+    padding: 10px;
 }
 
 .character-box .content {
@@ -82,5 +89,10 @@ ol {
     .character-img {
         height: 80px;
         width: 100px;
+    }
+    .card {
+        height: 160px;
+        width: 100px;
+        padding: 5px;
     }
 }
