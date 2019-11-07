@@ -24,9 +24,10 @@ body {
 
 #instructions {
     border: 3px solid red;
-    background-color: black;
+    background-color: rgb(0, 0, 0, .7);
     border-radius: 5px;
     margin: 10px;
+    padding: 5px;
 }
 
 .instList {
@@ -34,7 +35,7 @@ body {
 }
 
 .character-img {
-    height: 100px;
+    height: 80px;
     width: 175px;
 }
 
@@ -46,7 +47,7 @@ body {
 .card {
     width: 160px;
     height: auto;
-    background-color: black;
+    background-color: rgb(0, 0, 0, .7);
     border: 3px solid red;
     border-radius: 5px;
     margin: 5px;
@@ -80,7 +81,7 @@ ol {
 } */
 
 @media (max-width: 576px) {
-    
+
     #pageTitle {
         font-size: 30px;
     }
@@ -97,11 +98,13 @@ ol {
         height: 50px;
         width: 100px;
     }
+
     .card {
         height: 160px;
         width: 100px;
         padding: 5px;
     }
+
     .character-name {
         font-size: 18px;
     }
